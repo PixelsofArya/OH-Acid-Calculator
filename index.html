@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Resources Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Once Human Acid Calculator</h1>
+        
+        <label for="options"></label>
+        <select id="options">
+            <option value="">--Choose an option--</option>
+            <option value="acid-production">Acid Production</option>
+            <option value="sell-acid">Sell Acid</option>
+            <option value="deals">Deals</option>
+        </select>
+
+        <!-- Acid Production Calculator -->
+        <div id="acid-production-calculator" class="calculator" style="display:none;">
+            <h2>Acid Production Calculator</h2>
+            <div class="calculator-container">
+                <label for="acid">Acid Amount:</label>
+                <input type="number" id="acid" placeholder="Enter acid amount">
+                
+                <label for="sulfur">Sulfur Amount:</label>
+                <input type="number" id="sulfur" placeholder="Enter sulfur amount">
+                
+                <label for="energy-links">Energy Links Amount:</label>
+                <input type="number" id="energy-links" placeholder="Enter energy links amount">
+                
+                <p id="calc-result"></p>
+            </div>
+        </div>
+
+        <!-- Sell Acid Calculator -->
+        <div id="sell-acid-calculator" class="calculator" style="display:none;">
+            <h2>Sell Acid Calculator</h2>
+            <div class="calculator-container">
+                <label for="acid-sell">Acid Amount:</label>
+                <input type="number" id="acid-sell" placeholder="Enter acid amount">
+                
+                <label for="price-per-unit">Unit Price:</label>
+                <input type="number" id="price-per-unit" placeholder="Enter unit price">
+                
+                <p id="sell-result"></p>
+            </div>
+        </div>
+
+        <!-- Deals Calculator -->
+        <div id="deals-calculator" class="calculator" style="display:none;">
+            <h2>Deals Calculator</h2>
+            <div class="calculator-container">
+                <label for="total-amount">Total Budget:</label>
+                <input type="number" id="total-amount" placeholder="Enter total amount">
+
+                <label for="unit-price-deals">Unit Price:</label>
+                <input type="number" id="unit-price-deals" placeholder="Enter unit price">
+
+                <button id="calculate-deals">Calculate Acid</button>
+                <p id="deals-result"></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Buy Me a Coffee Button -->
+    <div class="buy-coffee-container">
+        <a href="https://www.buymeacoffee.com/pixelsofarya" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 50px; width: 180px;">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

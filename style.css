@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('once human wallaper 1.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* White text for the body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+}
+
+.main-container {
+    background: rgba(0, 0, 0, 0.5); /* Dark glass effect background */
+    backdrop-filter: blur(15px); /* Glass effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center; /* Center text in main container */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff; /* White heading color */
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px; /* Clear text size */
+    color: #ffffff; /* White label color */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    margin: 0; /* Remove margin */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Outline for dropdown */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Dark transparent background */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    backdrop-filter: blur(10px); /* Apply blur for glass effect */
+    transition: background 0.3s ease, color 0.3s ease; /* Transition for color */
+}
+
+select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2); /* Darker on focus */
+    color: #000000; /* Change text color to black when focused */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Outline for input */
+    border-radius: 5px;
+    background: transparent; /* Fully transparent background */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2); /* Darker on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Outline for button */
+    border-radius: 5px;
+    background: rgba(30, 30, 30, 0.9); /* Dark background for button */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(40, 40, 40, 0.9); /* Slightly lighter on hover */
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.calculator {
+    display: none; /* Start hidden */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px; /* Increase font size for results */
+    color: #ffffff; /* White text for results */
+}
+
+/* Buy Me a Coffee Button Styling */
+.buy-coffee-container {
+    position: fixed; /* Fixes the button to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other content */
+    text-align: center; /* Center the button */
+}
+
+.buy-coffee-container img {
+    border-radius: 10px; /* Optional: Round the corners of the button */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.buy-coffee-container img:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    input {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .buy-coffee-container {
+        bottom: 10px; /* Adjust distance from bottom */
+        right: 10px; /* Adjust distance from right */
+    }
+}
